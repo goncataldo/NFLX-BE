@@ -9,7 +9,7 @@ mongodb().catch((err) => console.log(err));
 
 app.use(express.json());
 
-app.use("/user", userRouter);
+app.use("/", userRouter);
 
 app.listen(port, () => {
   console.log(`Now listening on port ${port}`);
